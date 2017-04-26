@@ -1,3 +1,3 @@
 #!/bin/bash
 
-awk -F: '{ print $1 } {print $5} {print $6}' /etc/passwd
+cat /etc/passwd | cut -d: -f-1,3-3,6-6
